@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+</head>
+
+<body>
+  <div class="header" id="home">
+    <div class="navbar">
+      <div class="logo">GTG</div>
+      <div id="sidemenu">
+        <i class="fa-solid fa-xmark" onclick="closemenu()" id="closeBtn"></i>
+      <ul class="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Shop <img id="shop-image" src="images/layer1_vector.png" /></a></li>
+        <li><a href="#collection">Fragrance</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="openmenu()" id="openBtn"></i>
+      <div class="menu">
+        <img src="images/layer1_search.png" />
+        <button class="layer1_btn">Shop Now</button>
+      </div>
+    </div>
+    <div class="box-text">
+        <div class="mover"><img src="images/layer1_medal.png" /> <span class="para">Awarded the best perfume in the world</span></div>
+      </div>
+    <div class="home-content">
+      <h2>Live your best life.</h2>
+      <div class="home-features">
+        <div class="home-value">
+          <p class="para-value">10X</p>
+          <p class="para-value">9</p>
+          <p class="para-value">20K+</p>
+        </div>
+        <div class="home-value">
+          <p class="small-text">power</p>
+          <p class="small-text">ingredients</p>
+          <p class="small-text">happy customers</p>
+        </div>
+        <button class="layer1-btn">Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div id="products">
+    <div id="product-left">
+      <div class="single-img">
+        <img src="images/layer2_big_Photoframe.png" id="mainImg" alt="art" />
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img src="images/layer4_rethaferguson.png" class="small-img" alt="art" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/layer2_Photoframe2.png" class="small-img" alt="art" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/layer4_rethaferguson.png" class="small-img" alt="art" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/layer4_valeriya.png" class="small-img" alt="art" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/layer4_rethaferguson.png" class="small-img" alt="art" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/layer2_Photoframe2.png" class="small-img" alt="art" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/layer4_rethaferguson.png" class="small-img" alt="art" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/layer4_valeriya.png" class="small-img" alt="art" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="product-right">
+      <h3>GTG Perfumes</h3>
+      <div class="stars">
+        <img src="images/layer2_group_star.png" />
+        <p class="star">4.7 (999+ reviews)</p>
+      </div>
+      <p class="product-para">Experience the timeless allure backed by modern artistry, captured in every bottle of our fragrance. Crafted for those who seek to elevate their essence with purpose and sophistication.</p>
+      <div class="product-popular">
+        <h4>Most Popular</h4>
+        <div class="single-sub">
+          <div class="single-button">
+            <div class="radio-btn">
+              <input type="radio" id="radio-btn-single" name="sub-btn" />
+              <label for="radio-btn-single" name="sub-btn">Single Subscription
+            </div>
+            <div class="offer">
+              <p class="single-offer">$99.99</p>
+              <p class="single-rate">$146</p>
+            </div>
+          </div>
+          <div class="fragrance" id="fragranceSingle">
+            <div class="product-fragrance">
+              <h5>Choose a Fragrance</h5>
+              <div class="fragrance-img-group">
+                <div class="fragrance-img">
+                  <p class="frag-text">BEST-SELLER</p>
+                  <div class="radio-btn">
+                    <input type="radio" id="single-bestSeller" name="Subscribe-btn" />
+                    <label for="single" name="Subscribe-btn">Original
+                  </div>
+                  <img src="images/layer2_Photoroom 1.png" />
+                </div>
+                <div class="fragrance-img">
+                  <div class="radio-btn">
+                    <input type="radio" id="single" name="Subscribe-btn" />
+                    <label for="single" name="Subscribe-btn">Lily
+                  </div>
+                  <img src="images/layer2_Photoroom 2.png" />
+                </div>
+                <div class="fragrance-img">
+                  <div class="radio-btn">
+                    <input type="radio" id="single" name="Subscribe-btn" />
+                    <label for="single" name="Subscribe-btn">Rose
+                  </div>
+                  <img src="images/layer2_Photoroom 3.png" />
+                </div>
+              </div>
+              <h5>What’s Included:</h5>
+              <div class="offer-details">
+              <div class="month-offer">
+                <p class="offer-day-para">Every 30 Days</p>
+                <img src="images/layer2_Photoroom_1.png"/>
+              </div>
+              <div class="onetime-offer">
+                <p class="offer-day-para">One Time <span class="para">(Free)</span></p>
+                <div class="offer-img-group">
+                <img src="images/layer2_Photoroom 1.png"/>
+                <img src="images/layer2_Photoroom 2.png"/>
+                <img src="images/layer2_Photoroom 3.png"/>
+              </div>
+              </div>
+            </div>
+            <ul class="shop-list">
+            <li><img src="images/layer2_SealCheck.png"/> 1 Bottle Shipped Monthly</li>
+            <li><img src="images/layer2_SealCheck.png"/> <span class="para">Free</span> Sampler For Original, Lily And Rose Fragrances</li>
+            <li><img src="images/layer2_SealCheck.png"/> <span class="para">50% OFF Shipping</span></li> 
+            <li><img src="images/layer2_SealCheck.png"/> Pause or Cancel Anytime After 3 Months Minimum</li>
+            <li><img src="images/layer2_SealCheck.png"/> 28 Day Money Back Guarantee*</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <div class="double-sub">
+          <div class="double-button">
+            <div class="radio-btn">
+              <input type="radio" id="radio-btn-double" name="double2-btn" />
+              <label id="radio-btn-double">Double Subscription
+            </div>
+            <div class="offer">
+              <p class="double-offer">$169.99</p>
+              <p class="double-rate">$146</p>
+            </div>
+          </div>
+          <div class="fragrance" id="fragranceDouble">
+            <div class="product-fragrance">
+              <h5>Choose a Fragrance 1</h5>
+              <div class="fragrance-img-group">
+                <div class="fragrance-img">
+                  <p class="frag-text">BEST-SELLER</p>
+                  <div class="radio-btn">
+                    <input type="radio" class="fragrance-radio" id="double-original" name="sub-btn" />
+                    <label for="double-original">Original
+                  </div>
+                  <img src="images/layer2_Photoroom 1.png" />
+                </div>
+                <div class="fragrance-img">
+                  <div class="radio-btn">
+                    <input type="radio" id="double-lily" name="sub-btn" />
+                    <label for="double-lily">Lily
+                  </div>
+                  <img src="images/layer2_Photoroom 2.png" />
+                </div>
+                <div class="fragrance-img">
+                  <div class="radio-btn">
+                    <input type="radio" id="double-rose" name="sub-btn" />
+                    <label for="double-rose">Rose
+                  </div>
+                  <img src="images/layer2_Photoroom 3.png" />
+                </div>
+              </div>
+              <h5>Choose a Fragrance 2</h5>
+              <div class="fragrance-img-group">
+                <div class="fragrance-img">
+                  <p class="frag-text">BEST-SELLER</p>
+                  <div class="radio-btn">
+                    <input type="radio" class="fragrance-radio" id="second-original" name="second-sub-btn" />
+                    <label for="second-original">Original
+                  </div>
+                  <img src="images/layer2_Photoroom 1.png" />
+                </div>
+                <div class="fragrance-img">
+                  <div class="radio-btn">
+                    <input type="radio" id="second-lily" name="second-sub-btn" />
+                    <label for="second-lily">Lily
+                  </div>
+                  <img src="images/layer2_Photoroom 2.png" />
+                </div>
+                <div class="fragrance-img">
+                  <div class="radio-btn">
+                    <input type="radio" id="second-rose" name="second-sub-btn" />
+                    <label for="second-rose">Rose
+                  </div>
+                  <img src="images/layer2_Photoroom 3.png" />
+                </div>
+              </div>
+              <h5>What’s Included:</h5>
+              <div class="offer-details">
+              <div class="month-offer">
+                <p class="offer-day-para">Every 30 Days</p>
+                <img src="images/layer2_Photoroom_1.png"/>
+              </div>
+              <div class="onetime-offer">
+                <p class="offer-day-para">One Time <span class="para">(Free)</span></p>
+                <div class="offer-img-group">
+                <img src="images/layer2_Photoroom 1.png"/>
+                <img src="images/layer2_Photoroom 2.png"/>
+                <img src="images/layer2_Photoroom 3.png"/>
+              </div>
+              </div>
+            </div>
+            <ul class="shop-list">
+            <li><img src="images/layer2_SealCheck.png"/> 1 Bottle Shipped Monthly</li>
+            <li><img src="images/layer2_SealCheck.png"/> <span class="para">Free</span> Sampler For Original, Lily And Rose Fragrances</li>
+            <li><img src="images/layer2_SealCheck.png"/> <span class="para">50% OFF Shipping</span></li> 
+            <li><img src="images/layer2_SealCheck.png"/> Pause or Cancel Anytime After 3 Months Minimum</li>
+            <li><img src="images/layer2_SealCheck.png"/> 28 Day Money Back Guarantee*</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <button class="shop-add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="collection" id="collection">
+    <div class="collection-left">
+      <h3>Our Collection</h3>
+      <div class="box-collection">
+        <div class="boxes active">
+          <div class="box1">
+          <h4>Signature Scents</h4>
+          <span class="toggle-btn">-</span>
+          </div>
+          <p class="box1-text">Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+        </div>
+        <div class="boxes">
+        <div class="box1">
+          <h4>Signature Scents</h4>
+          <span class="toggle-btn">+</span>
+          </div>
+          <p class="box1-text">Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+        </div>
+        <div class="boxes">
+        <div class="box1">
+          <h4>Signature Scents</h4>
+          <span class="toggle-btn">+</span>
+          </div>
+          <p class="box1-text">Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+        </div>
+        <div class="boxes">
+        <div class="box1">
+          <h4>Signature Scents</h4>
+          <span class="toggle-btn">+</span>
+          </div>
+          <p class="box1-text">Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+        </div>
+      </div>
+    </div>
+    <div class="collection-right">
+      <img src="images/layer3_cottonbro.png" />
+    </div>
+  </div>
+  <div class="customer-rate" id="about">
+    <div class="customer-value">
+      <h5>84%</h5>
+      <p class="customer-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+    <div class="customer-value">
+      <h5>78%</h5>
+      <p class="customer-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+    <div class="customer-value">
+      <h5>89%</h5>
+      <p class="customer-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+    <div class="customer-value">
+      <h5>90%</h5>
+      <p class="customer-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+  </div>
+  <div class="table-part" id="blog">
+    <p>---</p>
+    <h4>Why GTG is the #1 Choice</h4>
+    <table class="table-item">
+      <tbody>
+        <tr>
+          <td>Qualities</td>
+          <td><img src="images/layer4_artempodrez.png"></td>
+          <td><img src="images/layer4_pixabay.png"></td>
+          <td><img src="images/layer4_rethaferguson.png"></td>
+          <td><img src="images/layer4_valeriya.png"></td>
+        </tr>
+        <tr class="tab-tr">
+          <td></td>
+          <td class="tab-td">GTG</td>
+          <td class="tab-td">Arose</td>
+          <td class="tab-td">Bella</td>
+          <td class="tab-td">Daisies</td>
+        </tr>
+        <tr>
+          <td>Potency Concentration</td>
+          <td>10x</td>
+          <td>1x</td>
+          <td>1x</td>
+          <td>10x</td>
+        </tr>
+        <tr>
+          <td>Longevity</td>
+          <td><img class="bg-img-color" src="images/layer4_tick.png" /></td>
+          <td><img src="images/layer4_cross.png"></td>
+          <td><img src="images/layer4_cross.png"></td>
+          <td><img src="images/layer4_tick.png"></td>
+        </tr>
+        <tr>
+          <td>Sillage</td>
+          <td><img class="bg-img-color" src="images/layer4_tick.png" /></td>
+          <td><img src="images/layer4_cross.png"></td>
+          <td><img src="images/layer4_cross.png"></td>
+          <td><img src="images/layer4_cross.png"></td>
+        </tr>
+        <tr>
+          <td>Bottle Design Score</td>
+          <td>9</td>
+          <td>5</td>
+          <td>6</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Blend and Harmony</td>
+          <td><img class="bg-img-color" src="images/layer4_tick.png" /></td>
+          <td><img src="images/layer4_cross.png"></td>
+          <td><img src="images/layer4_cross.png"></td>
+          <td><img src="images/layer4_cross.png"></td>
+        </tr>
+        <tr>
+          <td>Skin Compatibility</td>
+          <td><img class="bg-img-color" src="images/layer4_tick.png" /></td>
+          <td><img src="images/layer4_cross.png"></td>
+          <td><img src="images/layer4_cross.png"></td>
+          <td><img src="images/layer4_cross.png"></td>
+        </tr>
+        <tr>
+          <td>Scent Profile</td>
+          <td><img class="bg-img-color" src="images/layer4_tick.png" /></td>
+          <td><img class="bg-img-color" src="images/layer4_tick.png" /></td>
+          <td><img src="images/layer4_cross.png"></td>
+          <td><img src="images/layer4_cross.png"></td>
+        </tr>
+        <tr>
+          <td>Price vs. Quality</td>
+          <td><img class="bg-img-color" src="images/layer4_tick.png" /></td>
+          <td><img class="bg-img-color" src="images/layer4_tick.png" /></td>
+          <td><img src="images/layer4_cross.png"></td>
+          <td><img class="bg-img-color" src="images/layer4_tick.png" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="layer1_btn">Try It Risk-Free</button>
+  </div>
+  <div class="footer" id="contact">
+    <h4>GTG</h4>
+    <div class="footmenu">
+      <div class="foot-left">
+        <div class="foot-text">
+          <p>Home</p>
+          <p>Shop</p>
+          <p>Fragrance</p>
+        </div>
+        <div class="foot-text">
+          <p>About Us</p>
+          <p>Blog</p>
+          <p>Contact</p>
+        </div>
+        <div class="foot-text">
+          <div class="foot-menu">
+            <img src="images/layer5_Facebook.png" />
+            <p>Facebook</p>
+          </div>
+          <div class="foot-menu">
+            <img src="images/layer5_Instagram.png" />
+            <p>Instagram</p>
+          </div>
+          <div class="foot-menu">
+            <img src="images/layer5_X.png" />
+            <p>X</p>
+          </div>
+        </div>
+      </div>
+      <div class="foot-right">
+        <p>Join our newsletter to stay up to date on features and releases.</p>
+        <div class="foot-form">
+          <input type="text" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+        <p>By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
